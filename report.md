@@ -117,3 +117,12 @@ That means,
 2. Abstractions should not depend on details. Details should depend upon abstractions.
 
 when our app will be largely composed of modules, we have to clear things up by using dependency injection. High-level components depending on low-level components to function. To create specific behavior you can use techniques like inheritance or interfaces.
+
+Reference list:
+
+* [SOLID design principles: Building stable and flexible systems](https://raygun.com/blog/solid-design-principles/)
+* [S.O.L.I.D the First 5 Principles of Object Oriented Design with JavaScript](https://codeforgeek.com/s-o-l-i-d-the-first-five-principles-of-object-oriented-design/)
+* [S.O.L.I.D Principles explained in Python with examples.](https://medium.com/@dorela/s-o-l-i-d-principles-explained-in-python-with-examples-3332520b90ff)
+* [SOLID Principle in Programming: Understand With Real Life Examples](https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/)
+* [Understanding the Liskov Substitution Principle
+](https://www.youtube.com/watch?v=Mmy1EUKC_iE&t=155s)
