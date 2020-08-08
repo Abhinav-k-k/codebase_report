@@ -79,6 +79,40 @@ class fav_discount(Discount):
 ```
 ## 3. Liskov substitution principle.
 This principle states that every subclass/derived class should acts as a substitute to their base/parent class. 
+```python
 
+```
+## 4. Interface segregation principle
 
+A client should not be forced to depend upon interfaces and methods that they do not use.
 
+For example
+```python
+
+class IShape:
+    def draw(self):
+        raise NotImplementedError
+
+class Circle(IShape):
+    def draw(self):
+        pass
+
+class Square(IShape):
+    def draw(self):
+        pass
+
+class Rectangle(IShape):
+    def draw(self):
+        pass
+```
+A single class can implement several interfaces if needed. So we can provide a single implementation for all the common methodes between the interfaces. The segregated interfaces will also force us to think of our code more from the client’s point of view.
+
+## 5. Dependency inversion principle.
+
+Depend on Abstractions not on concretions.
+
+That means,
+1. High-level modules should not depend upon low-level modules. Both should depend upon abstractions.
+2. Abstractions should not depend on details. Details should depend upon abstractions.
+
+when our app will be largely composed of modules, we have to clear things up by using dependency injection. High-level components depending on low-level components to function. To create specific behavior you can use techniques like inheritance or interfaces.
