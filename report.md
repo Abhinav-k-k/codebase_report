@@ -79,9 +79,10 @@ class fav_discount(Discount):
 ```
 ## 3. Liskov substitution principle.
 This principle states that every subclass/derived class should acts as a substitute to their base/parent class. 
-```python
 
-```
+For Example
+
+A rectangle’s height can be any value and width can be any value.  A square is a rectangle with equal width and height. So we can extend the properties of the rectangle class into square class. In order to do that you need to swap the child (square) class with parent (rectangle) class to fit the definition of a square having four equal sides but a derived class does not affect the behavior of the parent class so if you will do that it will violate the Liskov Substitution Principle.
 ## 4. Interface segregation principle
 
 A client should not be forced to depend upon interfaces and methods that they do not use.
